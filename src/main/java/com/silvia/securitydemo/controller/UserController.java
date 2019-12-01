@@ -1,0 +1,20 @@
+package com.silvia.securitydemo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @Author: Silvia
+ * @Date: 2019/11/8  20:49
+ */
+
+@RestController
+@RequestMapping("/user/api")
+public class UserController {
+
+    @GetMapping("hello")
+    public String hello() {
+        return "hello, user";
+    }
+}
